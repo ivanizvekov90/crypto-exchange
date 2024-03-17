@@ -1,0 +1,11 @@
+drop table if exists public.coin;
+
+CREATE table public.coin
+(
+coin_id bigserial NOT NULL,
+name varchar NOT NULL,
+short_name varchar(4) not null,
+descreption varchar,
+created timestamp NOT NULL,
+last_modified timestamp NOT NULL
+);

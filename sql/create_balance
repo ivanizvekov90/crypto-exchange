@@ -1,0 +1,9 @@
+drop table if exists public.balance;
+
+create table public.balance
+
+(balance_id bigserial not null,
+user_id int8 not null,
+coin_id int8 not null,
+sum int8 not null
+);

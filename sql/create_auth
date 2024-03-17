@@ -1,0 +1,10 @@
+drop table if exists public.auth;
+
+CREATE table public.auth
+(
+auth_id bigserial not null,
+user_id int8 NOT NULL,
+auth_token varchar NOT NULL,
+created timestamp NOT NULL,
+last_modified timestamp NOT NULL
+);
